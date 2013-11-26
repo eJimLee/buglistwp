@@ -26,6 +26,9 @@
 						} else {
 							echo '&nbsp;';
 						}; ?>
+						<span style="float:right">
+							<?php echo " (".get_the_modified_time('Y-m-d H:i:s').")" ?>
+						</span>
 					</a></h3>
 				<?php endwhile; ?>
 				&nbsp;&nbsp;&nbsp;
@@ -80,7 +83,7 @@
 				</div>
 				<div class="meta-date">
 					<?php the_time('F j Y'); ?>
-					<?php the_time('G:i'); ?>
+					<?php the_time('G:i:s'); ?>
 				</div>
 			</div>
 

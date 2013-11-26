@@ -5,7 +5,7 @@
 		<h1 class="title">
 			The Latest
 		</h1>
-		<?php $myposts=get_posts('numberposts=10'); ?>
+		<?php $myposts=get_posts('numberposts=20'); ?>
 		<?php //foreach($myposts as $post): setup_postdata($post); ?>
 		<?php foreach($myposts as $post): ?>
 			<h3><a href="<?php the_permalink(); ?>"
@@ -17,7 +17,7 @@
 				} else {
 					echo '&nbsp;';
 				}; ?>
-				<span><?php echo "(".get_the_modified_time('Y-m-d').")" ?></span>
+				<span style="float:right"><?php echo " (".get_the_modified_time('Y-m-d H:i:s').")" ?></span>
 			</a></h3>
 		<?php //endforeach; wp_reset_postdata(); ?>
 		<?php endforeach; ?>

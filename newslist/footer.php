@@ -1,6 +1,10 @@
 </div>
 
 <div class="footer">
+	<div class="fr">
+		更多意见或建议请Mail到：<a href="yuchen@mail.tsinghua.com">yuchen@mail.tsinghua.com</a>
+	</div>
+	<br clear="right" \>
 	<div class="fl">
 		&copy;
 		<?php echo date('Y'); ?>
